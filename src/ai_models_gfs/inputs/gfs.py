@@ -53,7 +53,8 @@ class GfsInput(RequestBasedInput):
         )
         # Construct the URL to fetch GFS pressure data
         gfs_pressure_url = (
-            f"https://noaa-gfs-bdp-pds.s3.amazonaws.com/gfs.{str(kwargs['date'])}/"
+#            f"https://noaa-gfs-bdp-pds.s3.amazonaws.com/gfs.{str(kwargs['date'])}/"
+            f"https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.{str(kwargs['date'])}/"           
             f"{str(kwargs['time']).zfill(2)}/atmos/"
             f"gfs.t{str(kwargs['time']).zfill(2)}z.pgrb2.0p25.f000"
         )
@@ -134,7 +135,8 @@ class GfsInput(RequestBasedInput):
         )
         # Construct the URL to fetch GFS surface data
         gfs_surface_url = (
-            f"https://noaa-gfs-bdp-pds.s3.amazonaws.com/gfs.{str(kwargs['date'])}/"
+#            f"https://noaa-gfs-bdp-pds.s3.amazonaws.com/gfs.{str(kwargs['date'])}/"
+            f"https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.{str(kwargs['date'])}/"                        
             f"{str(kwargs['time']).zfill(2)}/atmos/"
             f"gfs.t{str(kwargs['time']).zfill(2)}z.pgrb2.0p25.f000"
         )
