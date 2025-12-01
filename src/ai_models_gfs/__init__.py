@@ -6,3 +6,4 @@
 # nor does it submit to any jurisdiction.
 
 #from ._version import __version__
+__version__ = "0.0.0+local"
